@@ -1,12 +1,20 @@
 import * as React from 'react';
+import { color } from '@storybook/addon-knobs';
 export interface IButtonProps {
   children?: React.ReactNode,
-  onClick?: (e:any) => void
+  
   disabled?:boolean
-  style?: {backgroundColor: string}
+
+  click :boolean
+  onClick?: (click:boolean, clickcolor:string) => void
+ 
+background:string
+  
+ 
  
   
 }
+
 const styles = {
   border: '1px solid #eee',
   borderRadius: 3,
@@ -16,13 +24,14 @@ const styles = {
   padding: '3px 10px',
   margin: 10,
 };
+
 const Button: React.SFC<IButtonProps> = (props) => (
-  <button disabled={props.disabled} onClick={props.onClick}  type="button">
+  <button disabled={props.disabled} background-color={props.background} onClick={() =>
+    props.click === true && ( alert(" Clicked"))} type="button">
     {props.children}
   </button>
 );
 Button.defaultProps = {
-  children: null,
   onClick: () => {}
 };
 export default Button;

@@ -5,11 +5,14 @@ import Button from "./Button";
 import { text, boolean } from '@storybook/addon-knobs'
 storiesOf("Button", module)
   .add("with text and color", () => (
-    <Button background={"red"}  disabled={false} click={true} >Hellow Button</Button>
+    <Button  backgroundColor={"Blue"}  click={true} >Click Me!</Button>
   ))
   .add('Emoji', () => (
-    <Button background={""} disabled={false} click={false}>😀 😎 👍 💯</Button>
+    <Button backgroundColor={""}  >😀 😎 👍 💯</Button>
   ))
   .add("Disabled Button", () => (
-    <Button background={"red"}  disabled={true} click={false} >Disabled</Button> 
+    <Button backgroundColor={""}  disabled={true}  >Disabled</Button> 
+  ))
+  .add("Button with icon",
+  () => (<Button backgroundColor="White" disabled={false}  >Icon</Button> 
   ));

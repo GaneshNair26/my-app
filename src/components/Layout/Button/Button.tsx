@@ -11,7 +11,6 @@ export interface IButtonProps {
   children?: React.ReactNode,
   
   disabled?:boolean
-  buttonText: string;
 
   click?:boolean
   onClick?: (click:boolean) => void
@@ -20,9 +19,6 @@ export interface IButtonProps {
   icon?: string
   outline?:boolean
   isIcon?:boolean
-  primary?: boolean;
-
-danger?: boolean;
   
 }
 
@@ -30,10 +26,7 @@ danger?: boolean;
 
 
 export default (props: IButtonProps) => {
-  const {backgroundColor,buttonText,color,isIcon,icon,disabled,primary,danger} = props;
-  let styles;
-    primary ? (styles = "primary") : danger ? (styles = "danger") : (styles = "");
-  
+  const {backgroundColor,color,isIcon,icon,disabled} = props;
   return (
     <div>
        <button className="btn btn-primary"  style={{backgroundColor,color}}  disabled={disabled} onClick={() =>

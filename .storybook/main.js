@@ -16,8 +16,11 @@ module.exports = {
 
     "@storybook/addon-docs",
 
-    "@storybook/addon-storysource"
-    
+    "@storybook/addon-storysource",
+
+    '@storybook/addon-storyshots',
+
+    "@storybook/addon-jest"
     ]
     
     };

@@ -4,9 +4,6 @@ import { withKnobs, boolean, select } from '@storybook/addon-knobs';
 import { X, Search, Icon } from 'react-feather';
 import { Button } from 'reactstrap';
 import { Camera } from 'react-feather';
-
-
-
 import { IconButton, IIconProps, IContextualMenuProps, Stack, Link } from 'office-ui-fabric-react';
 import { actions } from '@storybook/addon-actions';
 
@@ -14,10 +11,8 @@ import { actions } from '@storybook/addon-actions';
 
 export interface IButtonProps {
   children?: React.ReactNode,
-  
-  disabled?:boolean
+    disabled?:boolean
   buttonText: string;
-
   click?:boolean
   onClick?: (onClick:any) => void
   backgroundColor?:string  

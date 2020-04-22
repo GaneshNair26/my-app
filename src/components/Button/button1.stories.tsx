@@ -19,7 +19,7 @@ storiesOf("Button", module)
      > Search</Button>
   ))
   .add("Close Button",  () => (
-    <Button buttonText="Button with TExt" backgroundColor={""} flag={1} color={""} click={true}
+    <Button buttonText="Button with" backgroundColor={""} flag={1} color={"blue"} 
      > Close</Button>
   ))
   .add('Emoji', () => (
@@ -27,6 +27,6 @@ storiesOf("Button", module)
   ))
   .add("Button with Knobs",
   () => (<Button  buttonText="Button with" backgroundColor={color("Background","white","Background")} 
-  flag={number("Icons from 1-3",0)}
+  flag={number("Icons from 1-3",0)} color={color("Color","Black","Color")}
   > Button Knobs</Button> 
   ));

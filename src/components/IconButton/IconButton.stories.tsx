@@ -13,7 +13,7 @@ storiesOf("IconButton", module)
     </Button>
   ))
   .add("Danger Button",  () => (
-    <Button buttonText="Primary Button"  active={false} primary={true} block={false}  color="danger" >
+    <Button buttonText="Secondary Button"  active={false} primary={true} block={false}  color="danger" >
       Danger
     </Button>
   ))
